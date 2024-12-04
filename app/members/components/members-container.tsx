@@ -7,9 +7,8 @@ import getToolTip from "@/lib/tooltip";
 import getUrl from "@/lib/http";
 
 async function getMembers(): Promise<MemberLookup[]> {
-
-  const { signal } = new AbortController()
-  const res = await fetch(createUrl('members/random'), { signal });
+ 
+  const res = await fetch(createUrl('members/random'), { cache: 'no-store' });
   if (!res.ok) {
     if(res.status == 404)
       notFound(); 

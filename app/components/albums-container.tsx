@@ -5,9 +5,8 @@ import { notFound } from "next/navigation";
 
 
 async function getAlbums(): Promise<AlbumLookup[]> {
-  
-  const { signal } = new AbortController()
-  const res = await fetch(createUrl('albums/random'), { signal });
+ 
+  const res = await fetch(createUrl('albums/random'), { cache: 'no-store' });
   if (!res.ok) {
     if(res.status == 404)
       notFound(); 
