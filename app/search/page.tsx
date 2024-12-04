@@ -2,13 +2,14 @@ import SearchResultsContainer from "./components/search-results-container";
 import ImageSkeleton from "../components/image-skeleton";
 import { Suspense } from "react";
 
-export default async function SearchPage({searchParams}: {searchParams: {[key: string]: string };}) {
-    
-  const params = await searchParams;
+type tParams = Promise<{ criteria: string }>;
+
+export default async function SearchPage(props: { searchParams: tParams }) {
+      const { criteria } = await props.searchParams;
 
   return (
-    <Suspense fallback={<ImageSkeleton ></ImageSkeleton>}>
-      <SearchResultsContainer criteria={params.criteria} ></SearchResultsContainer>
+    <Suspense fallback={<ImageSkeleton ></ImageSkeleton>}>  
+      <SearchResultsContainer criteria={criteria} ></SearchResultsContainer>
     </Suspense>
   )
 }

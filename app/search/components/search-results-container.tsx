@@ -6,7 +6,7 @@ import SearchResultsHtml from "./search-results";
 export type IProps = 
 {   
   criteria: string;   
-} 
+}  
 
 async function getSearchResults(criteria: string): Promise<SearchResults> {
   
