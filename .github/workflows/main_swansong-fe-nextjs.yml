@@ -9,6 +9,8 @@ on:
 env:
   APPLICATION_PUBLISH_PROFILE: ${{ secrets.APP_PUBLISH_PROFILE }}
   WEBAPP_NAME: "prod-app-swansong-nextjs"
+  API_URL: ${{ secrets.API_URL }}
+  NEXT_PUBLIC_AZURE_STORAGE_URL: ${{ secrets.NEXT_PUBLIC_AZURE_STORAGE_URL }}
 
 jobs:
   build:
