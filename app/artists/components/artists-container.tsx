@@ -8,7 +8,8 @@ import getUrl from "@/lib/http";
 
 async function getArtists(): Promise<ArtistLookup[]> {
 
-  const res = await fetch(createUrl('artists/random'));
+  const { signal } = new AbortController()
+  const res = await fetch(createUrl('artists/random'), { signal });
   if (!res.ok) {
     if(res.status == 404)
       notFound(); 
