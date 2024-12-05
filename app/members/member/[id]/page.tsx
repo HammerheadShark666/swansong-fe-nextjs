@@ -33,7 +33,7 @@ export default async function MemberPage( { params }:{ params: Promise<{ id: num
   <>
     {member && ( 
       <div className="flex w-full justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-12 w-[66%] border-l-2 border-r-2 py-4 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 border-l-2 border-r-2 py-4 px-4">
           <div className="p-4 text-left grid-cols-1 col-span-3 md:grid-cols-3">
             <Image className="h-48 w-full object-cover md:h-full md:w-48" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt={member.stageName} src={`${process.env.NEXT_PUBLIC_AZURE_STORAGE_URL}members/${member.photo}`}/>
           </div> 
