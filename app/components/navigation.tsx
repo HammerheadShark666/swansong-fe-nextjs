@@ -12,8 +12,6 @@ export default function Navigation() {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <Navbar toggle={toggle} /> */}
-
       <NavigationBar toggle={toggle} />
     </>
   );

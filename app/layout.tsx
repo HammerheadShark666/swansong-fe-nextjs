@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-//import NavigationBar from "./components/nav-bar"
 import Footer from "./components/footer"
 import { Ibarra_Real_Nova, Bellefair, Philosopher, Poppins, Raleway } from 'next/font/google'
 import Navigation from "./components/navigation";
@@ -25,7 +24,6 @@ export default function RootLayout({
     <html lang="en">  
       <body className="w-full flex flex-col min-h-screen">
         <header>
-          {/* <NavigationBar ></NavigationBar> */}
           <Navigation />
         </header>
         <main className="w-full flex-grow flex">
