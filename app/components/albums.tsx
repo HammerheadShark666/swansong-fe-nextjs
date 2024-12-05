@@ -9,8 +9,8 @@ type IProps = {
 };
 
 export default function Albums({albums} : IProps){  
-  return (
-    <div className="max-w-7xl mx-auto grid grid-cols-12">
+  return ( 
+    <div className="w-full mx-auto grid grid-cols-12">
       <div className="col-span-12">    
         <div className="grid-cols-12 pt-5 pl-5"> 
           <span className="text-lg">Albums</span>
