@@ -23,12 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">  
-      <body className="w-full">
+      <body className="w-full flex flex-col min-h-screen">
         <header>
           {/* <NavigationBar ></NavigationBar> */}
           <Navigation />
         </header>
-        <main className="w-full flex-grow">
+        <main className="w-full flex-grow flex">
           {children}
         </main>       
         <Footer></Footer> 
