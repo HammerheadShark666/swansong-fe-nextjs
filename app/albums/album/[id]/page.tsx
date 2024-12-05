@@ -35,7 +35,7 @@ export default async function AlbumPage( { params }:{ params: Promise<{ id: numb
   return  (
     <>
     {album && ( 
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center flex-1">
         <div className="grid grid-cols-12 w-full md:grid-cols-12 md:w-[90%] lg:w-[66%] border-l-2 border-r-2 py-4 px-4">
           <div className="p-4 text-left grid-cols-1 col-span-12 md:col-span-4 md:grid-cols-4 lg:grid-cols-3 lg:col-span-3">
             <Image className="h-48 w-full object-cover md:h-full md:w-48" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt={album.name} src={`${process.env.NEXT_PUBLIC_AZURE_STORAGE_URL}albums/${album.photo}`}/>
