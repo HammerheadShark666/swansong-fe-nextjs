@@ -32,16 +32,16 @@ export default async function SearchResultsContainer(params: IProps) {
 
   return (          
     <>    
-      <div className="max-w-7xl mx-auto grid grid-cols-12">            
-        <div className="col-span-12">   
+      <div className="max-w-7xl mx-auto grid grid-cols-12">
+        <div className="col-span-12">          
           <div className="grid-cols-12 pt-5 pl-5"> 
             <span className="text-lg">Search results for &quot;{params.criteria}&quot;</span>
-          </div>
+          </div>       
+          <SearchResultsHtml results={albums} type={resultType[0]}></SearchResultsHtml>
+          <SearchResultsHtml results={artists} type={resultType[1]}></SearchResultsHtml>
+          <SearchResultsHtml results={members} type={resultType[2]}></SearchResultsHtml> 
         </div>
-      </div>
-      <SearchResultsHtml results={albums} type={resultType[0]}></SearchResultsHtml>
-      <SearchResultsHtml results={artists} type={resultType[1]}></SearchResultsHtml>
-      <SearchResultsHtml results={members} type={resultType[2]}></SearchResultsHtml>    
+      </div>  
     </>
   );
 } 
