@@ -67,7 +67,7 @@ return(
       </div>
 
       <div className="col-span-3 grid-cols-3 lg:grid-cols-3 sm:col-span-2 sm:grid-cols-2"> 
-        <div className="hidden md:block pt-2">                
+        <div className="hidden md:block lg:pt-2 md:pt-1">                
           <div className="relative ml-3">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pt-2 md:pt-0 pointer-events-none">
               <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
