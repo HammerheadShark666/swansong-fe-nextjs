@@ -41,7 +41,7 @@ export default async function ArtistPage( { params }:{ params: Promise<{ id: num
             <Image className="h-48 w-full object-cover md:h-full md:w-48" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} alt={artist.name} src={`${process.env.NEXT_PUBLIC_AZURE_STORAGE_URL}artists/${artist.photo}`}/>
             <Members members={artist.members}></Members> 
           </div> 
-          <div className="p-4 grid-cols-1 col-span-9 md:col-span-9 md:grid-cols-9">
+          <div className="p-4 grid-cols-1 col-span-12 md:col-span-9 md:grid-cols-9">
             <div className={`${poppins.className} tracking-wide text-4xl text-zinc-600`}>{artist.name}</div>             
             <div className={`${raleway.className} mt-2 py-4 text-black border-t-2 border-black prose`} dangerouslySetInnerHTML={{ __html: artist.description }}>  
             </div> 
