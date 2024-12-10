@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/footer"
 import { Ibarra_Real_Nova, Bellefair, Philosopher, Poppins, Raleway } from 'next/font/google'
-import Navigation from "./components/navigation";
+import Navigation from "./components/navigation/navigation";
 
 export const ibarraRealNova = Ibarra_Real_Nova({ weight: "400", display: 'swap', subsets: ['latin'] });
 export const bellefair = Bellefair({ weight: "400", display: 'swap', subsets: ['latin'] }); 
