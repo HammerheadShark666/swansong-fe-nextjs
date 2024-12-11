@@ -40,7 +40,7 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
 
         <div className="grid col-span-1 grid-col-12">
 
-        <ul className="sidebar-nav leading-relaxed text-left pl-10 pr-5 text-lg">
+        <ul className="sidebar-nav leading-relaxed text-left px-10 text-xl">
           <li>
             <Link href="/albums" onClick={toggle}>
               <p>Albums</p>
@@ -64,7 +64,7 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
                       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                   </svg>
                 </div>
-                <input onKeyDown={handleOnKeyDown} type="search" id="default-search" className="block w-11/12 p-3 ps-10 text-sm text-gray-900 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
+                <input onKeyDown={handleOnKeyDown} type="search" id="default-search" className="block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
               </div>   
             </div>
           </li>        
