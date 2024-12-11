@@ -17,7 +17,7 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
   return (
     <>
       <div
-        className="sidebar-container fixed w-screen h-screen overflow-hidden bg-white grid pt-[110px] left-0 z-10"
+        className="sidebar-container w-11/12 h-full fixed overflow-hidden bg-white grid pt-[110px] left-0 z-10"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: ` ${isOpen ? "0" : "-100%"}`,
@@ -69,7 +69,6 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
             </li>        
           </ul>
         </div> 
-
       </div>
     </>
   );
