@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import ArtistsContainer from "./components/artists-container";
-import ImageSkeleton from "../components/image-skeleton";
+import ImageSkeleton from "../components/skeleton/image-skeleton";
  
 export default async function ArtistsPage() {
   return (   

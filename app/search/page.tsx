@@ -1,5 +1,5 @@
 import SearchResultsContainer from "./components/search-results-container";
-import ImageSkeleton from "../components/image-skeleton";
+import ImageSkeleton from "../components/skeleton/image-skeleton";
 import { Suspense } from "react";
 
 type tParams = Promise<{ criteria: string }>;
