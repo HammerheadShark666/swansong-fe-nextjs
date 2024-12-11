@@ -23,8 +23,7 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
           top: ` ${isOpen ? "0" : "-100%"}`,
         }}
       >
-        <button className="absolute right-0 p-5" onClick={toggle}>
-          {/* Close icon */}
+        <button className="absolute right-0 p-5" onClick={toggle}> 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="48"
