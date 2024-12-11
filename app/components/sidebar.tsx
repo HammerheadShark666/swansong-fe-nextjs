@@ -56,7 +56,6 @@ export default function Sidebar({ isOpen, toggle, }: { isOpen: boolean, toggle: 
               <p>Members</p>
             </Link>
           </li> 
-
           <li>
             <div className="md:block pt-4">                
               <div className="relative">
